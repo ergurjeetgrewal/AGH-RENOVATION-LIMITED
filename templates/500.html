@@ -1,0 +1,19 @@
+{% extends 'myshop/base.html' %}
+{% block active1 %}active{% endblock active1 %}
+{% block title %}ERROR{% endblock title%}
+{% block css %}
+<style>
+</style>
+{% endblock css %}
+{% block body %}
+{% load static %}
+<div class="container mt-4">
+<div class="jumbotron">
+  <h1 class="display-4">SERVER ERROR</h1>
+  <p class="lead">Server error occured please try again after sometime.</p>
+  <hr class="my-4">
+  <p>We have received error our team is trying to fix please navigate to home.</p>
+  <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+</div>
+</div>
+{% endblock body %}

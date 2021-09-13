@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta name="description"
+        content="AGH RENOVATIONS official website. Our rationale is to satify a client need and increase a trust for lifetime." />
+    <meta name="keywords"
+        content="home renovation alberta,construction companies in Calgary,home renovators,painters,designers,best home painter in Calgary" />
+    <link rel="canonical" href="https://aghrenovation.ca/"/>
+    <meta name="page-topic" content="Best Home renovaters in Calgary" />
+    <meta name="copyright" content="AGH RENOVATION" />
+    <meta name="author" content="Gurjeet Singh Grewal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="rating" content="safe for kids" />
+    <meta name="googlebot" content=" index, follow " />
+    <meta name="bingbot" content=" index, follow " />
+    <meta name="reply-to" content="computewithlucifer@gmail.com" />
+    <meta name="allow-search" content="yes" />
+    <meta name="revisit-after" content="daily" />
+    <meta name="distribution" content="global" />
+    <meta name="expires" content="never" />
+    <meta http-equiv="content-language" content="english" />
+    <title>{% block title %}{% endblock title%} - AGH RENOVATION LIMITED</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href='{% static "myshop/css/animate.css" %}'>
+
+    <link rel="stylesheet" href='{% static "myshop/css/owl.carousel.min.css" %}'>
+    <link rel="stylesheet" href='{% static "myshop/css/owl.theme.default.min.css" %}'>
+    <link rel="stylesheet" href='{% static "myshop/css/magnific-popup.css" %}'>
+
+    <link rel="stylesheet" href='{% static "myshop/css/ionicons.min.css" %}'>
+
+    <link rel="stylesheet" href='{% static "myshop/css/flaticon.css" %}'>
+    <link rel="stylesheet" href='{% static "myshop/css/icomoon.css" %}'>
+    <link rel="stylesheet" href='{% static "myshop/css/style.css" %}'>
+    <link rel="shortcut icon" href='{% static "myshop/images/favicon.png" %}' type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171129058-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171129058-1');
+    </script>
+
+    <style>
+    .alert {
+        margin-bottom:0;
+    }
+    .logo-img{
+
+    }
+    .navbar-brand{
+        margin-bottom:0px;
+    }
+    </style>
+    {% block css %}{% endblock css %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col">
+                {% comment %} <a class="navbar-brand" href="/">AGH RENOV<span>ATION LIM.</span></a> {% endcomment %}
+            </div>
+            <div class="col d-flex justify-content-end">
+                <div class="social-media" style="display: flex;justify-content: center;align-items: center;">
+                    <p class="mb-0 d-flex">
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                        <a href="https://www.instagram.com/agh_renovation/" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <form action="#" class="searchform order-lg-last">
+                <div class="form-group d-flex">
+                    <input type="text" class="form-control pl-3" placeholder="Search">
+                    <button type="submit" placeholder="" class="form-control search"><span
+                            class="fa fa-search"></span></button>
+                </div>
+            </form>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {% block active1 %}
+                    {% endblock active1 %}"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item {% block active2 %}
+                    {% endblock active2 %}"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item {% block active3 %}
+                    {% endblock active3 %}"><a href="/team" class="nav-link">Our team</a></li>
+                    <li class="nav-item {% block active4 %}
+                    {% endblock active4 %}"><a href="/project" class="nav-link">Project</a></li>
+                    <li class="nav-item {% block active5 %}
+                    {% endblock active5 %}"><a href="/blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item {% block active6 %}
+                    {% endblock active6 %}"><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+    <!-- notification system -->
+    <div>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong>Message: </strong> {{ message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    </div>
+    {% block body %}
+    {% endblock body %}
+    <!-- footer starts -->
+    <footer class="footer">
+        <div class="container-fluid px-lg-5">
+            <div class="row">
+                <div class="col-md-9 py-5">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <h2 class="footer-heading">ABOUT US</h2>
+                            <p>Our rationale is to satify a client need and increase a trust for lifetime.</p>
+                            <ul class="ftco-footer-social p-0">
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                                        title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                                        title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="https://www.instagram.com/agh_renovation/" data-toggle="tooltip" data-placement="top"
+                                        title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+                                <li class="py-1 d-block">OPEN: Monday – Friday, 7:30 a.m. to 4:00 p.m.</li>
+                                <li class="py-1 d-block">CLOSED: Saturday, Sunday & Statutory Holidays.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-lg-10">
+                                    <div class="row">
+                                        <div class="col-md-5 mb-md-0 mb-5">
+                                            <h2 class="footer-heading">HOME RENOVATIONS</h2>
+                                            <ul class="list-unstyled">
+                                                <li><a href="project" class="py-1 d-block">Kitchen Renovations</a></li>
+                                                <li><a href="project" class="py-1 d-block">Bathroom Renovations</a></li>
+                                                <li><a href='project' class="py-1 d-block">Basement Development</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-5 mb-md-0 mb-5">
+                                            <h2 class="footer-heading">GET IN TOUCH</h2>
+                                            <ul class="list-unstyled">
+                                                <li><a href="tel:+15878993252" class="py-1 d-block">PHONE:
+                                                        +15878993252</a></li>
+                                                <li><a href="mailto:Aghreno@gmail.com" class="py-1 d-block">EMAIL:
+                                                        Aghreno@gmail.com</a></li>
+                                                <li><a href="jobs" class="py-1 d-block">ADDRESS: 180 Falworth way
+                                                        Northeast, Alberta Calgary T3J1E7 Canada</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2 mb-md-0 mb-2">
+                                            <h2 class="footer-heading">OURCOMPANY</h2>
+                                            <ul class="list-unstyled">
+                                                <li><a href="https://instagram.com/computewithlucifer"
+                                                        class="py-1 d-block" target="_blank">Security</a></li>
+                                                <li><a href="termsandconditions" class="py-1 d-block">Terms</a></li>
+                                                <li><a href="privacy" class="py-1 d-block">Privacy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-md-5">
+                        <div class="col-md-12">
+                            <p class="copyright">
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Managed
+                                And Operated By <a href="https://instagram.com/computewithlucifer"
+                                    target="_blank">Computewithlucifer</a><br>
+                                This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+                    <h2 class="footer-heading">Request A Call</h2>
+                    <form action="#" class="contact-form" id="quoteform">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" placeholder="Your Phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="msg" id="message" cols="30" rows="3" class="form-control"
+                                placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control submit px-3">Send</button>
+                        </div>
+                        <div class="form-group" id="response">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" /></svg></div>
+
+
+    <script src='{% static "myshop/js/jquery.min.js" %}'></script>
+    <script src='{% static "myshop/js/jquery-migrate-3.0.1.min.js" %}'></script>
+    <script src='{% static "myshop/js/popper.min.js" %}'></script>
+    <script src='{% static "myshop/js/bootstrap.min.js" %}'></script>
+    <script src='{% static "myshop/js/jquery.easing.1.3.js" %}'></script>
+    <script src='{% static "myshop/js/jquery.waypoints.min.js" %}'></script>
+    <script src='{% static "myshop/js/jquery.stellar.min.js" %}'></script>
+    <script src='{% static "myshop/js/jquery.animateNumber.min.js" %}'></script>
+    <script src='{% static "myshop/js/owl.carousel.min.js" %}'></script>
+    <script src='{% static "myshop/js/jquery.magnific-popup.min.js" %}'></script>
+    <script src='{% static "myshop/js/scrollax.min.js" %}'></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src='{% static "myshop/js/google-map.js" %}'></script>
+    <script src='{% static "myshop/js/main.js" %}'></script>
+    <script>
+        $('#quoteform').submit(function (event) {
+            $('#response').empty()
+            var formdata = {
+                'name': $('input[name=name]').val(),
+                'email': $('input[name=email]').val(),
+                'phone': $('input[name=phone]').val(),
+                'subject': $('input[name=subject]').val(),
+                'message': $('textarea[name=msg]').val(),
+                'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val()
+            };
+            console.log(formdata)
+            $.ajax({
+                type: "POST",
+                url: '/agh/callrequest',
+                data: formdata,
+                encode: true
+            })
+                .done(function (data) {
+                    if (data == 1) {
+                        mystr = `<span class="btn btn-danger">Your call Request has been submitted!</span>`
+                        $('#response').append(mystr);
+                    }
+                    else {
+                        mystr = `<span class="btn btn-danger">Your call Request is not been submitted try again</span>`
+                        $('#response').append(mystr);
+                    }
+                });
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

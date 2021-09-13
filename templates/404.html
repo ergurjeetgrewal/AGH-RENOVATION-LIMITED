@@ -1,0 +1,17 @@
+{% extends 'myshop/base.html' %}
+{% block active1 %}active{% endblock active1 %}
+{% block title %}ERROR{% endblock title%}
+{% block css %}
+<style>
+</style>
+{% endblock css %}
+{% block body %}
+<div class="container mt-4">
+<div class="jumbotron">
+  <h1 class="display-4">PAGE NOT FOUND</h1>
+  <p class="lead">The page you are trying to visit is missing please navigate to home</p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+</div>
+</div>
+{% endblock body %}
